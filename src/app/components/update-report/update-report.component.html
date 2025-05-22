@@ -1,0 +1,10 @@
+<h2>Report List</h2>
+<ul *ngIf="reports; else nodata">
+    <li *ngFor="let report of reports | async; let i = index">
+        {{ report.name }} - {{ report.type }}
+        <!-- <button (click)="editReport(i)">Edit</button> -->
+    </li>
+</ul>
+<ng-template #nodata>
+    <p>No reports available.</p>
+</ng-template>

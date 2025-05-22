@@ -1,0 +1,46 @@
+.sidebar {
+  background: linear-gradient(135deg, #007bff, #00bfff, #1c92d2); /* Dynamic gradient */
+  width: 240px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  overflow: hidden;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.sidebar a i {
+  font-size: 18px; /* Icon size */
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.3); /* Soft hover glow */
+  transform: translateX(8px); /* Slide effect */
+}
+
+.sidebar li:hover {
+  transform: scale(1.05); /* Subtle hover animation */
+}

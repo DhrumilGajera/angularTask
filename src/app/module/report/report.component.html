@@ -1,0 +1,8 @@
+
+<h2>Reports</h2>
+<nav>
+  <button appHasPermission module="Reports" requiredAction="Reports.Create" (click)="addReportRoute()">Create Report</button>
+  <button appHasPermission module="Reports" requiredAction="Reports.Update" (click)="addFilesRoute()">list Report</button>
+  <button appHasPermission module="Reports" requiredAction="Reports.Delete" (click)="DeleteFile()">Delete Report</button>
+</nav>
+<router-outlet></router-outlet> <!-- ✅ Loads child components -->

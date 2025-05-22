@@ -1,0 +1,9 @@
+<nav class="sidebar">
+  <ul>
+    <li *ngFor="let module of menuItems">
+      <a [routerLink]="['/' + module.toLowerCase()]">
+        <i class="pi pi-folder"></i> {{ module }}
+      </a>
+    </li>
+  </ul>
+</nav>

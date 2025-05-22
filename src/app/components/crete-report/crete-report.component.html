@@ -1,0 +1,13 @@
+<form (ngSubmit)="submitReport()">
+  <label for="reportName">Report Name:</label>
+  <input id="reportName" [(ngModel)]="reportName" name="reportName" type="text" placeholder="Enter report name" />
+
+  <label for="reportType">Report Type:</label>
+  <select id="reportType" [(ngModel)]="reportType" name="reportType">
+    <option value="Financial">Financial</option>
+    <option value="Operational">Operational</option>
+    <option value="Technical">Technical</option>
+  </select>
+
+  <button type="submit">Submit</button>
+</form>
